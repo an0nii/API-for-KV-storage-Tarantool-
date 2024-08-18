@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  tarantool:
+    image: tarantool/tarantool:latest
+    container_name: tarantool
+    volumes:
+      - ./tarantool/init.lua:/opt/tarantool/init.lua
+    command: tarantool /opt/tarantool/init.lua
+    ports:
+      - "3301:3301"
+
+  api:
+    build: ./api
+    container_name: api
+    ports:
+      - "5000:5000"
+    environment:
+      TARANTOOL_HOST: tarantool
+      TARANTOOL_PORT: 3301
+    depends_on:
+      - tarantool
