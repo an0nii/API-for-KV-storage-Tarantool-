@@ -5,8 +5,8 @@
 
 1. **Клонируйте репозиторий:**
    ```sh
-   git clone <URL вашего репозитория>
-   cd <название вашего репозитория>
+   git clone https://github.com/an0nii/API-for-KV-storage-Tarantool-.git
+   cd API-for-KV-storage-Tarantool-
    ```
 
 2. **Установите зависимости:**
