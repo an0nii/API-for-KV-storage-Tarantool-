@@ -1,12 +1,12 @@
 # API-for-KV-storage-Tarantool-
 **VK Internship Project**
 
-## Инструкции по запуску вашего решения
+## Инструкции по запуску
 
 1. **Клонируйте репозиторий:**
    ```sh
-   git clone <URL вашего репозитория>
-   cd <название вашего репозитория>
+   git clone https://github.com/an0nii/API-for-KV-storage-Tarantool-.git
+   cd API-for-KV-storage-Tarantool-
    ```
 
 2. **Установите зависимости:**
@@ -19,12 +19,12 @@
    docker-compose up --build
    ```
    
-**Чтобы выключить приложение:**
+**Выключить приложение:**
    ```sh
    docker-compose down
    ```
 
-## Полная документация к API
+## Документация к API
 
 ### `POST /api/register`
 
