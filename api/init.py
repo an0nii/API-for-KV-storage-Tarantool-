@@ -1,6 +1,8 @@
 from auth import create_user
 import os
 
+# Файл запуска для создания admin пользователя с паролем presale
+
 def create_admin_user():
     admin_username = os.environ.get('ADMIN_LOGIN', 'admin')
     admin_password = os.environ.get('ADMIN_PASSWORD', 'presale')

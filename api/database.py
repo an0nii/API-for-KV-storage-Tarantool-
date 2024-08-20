@@ -1,5 +1,7 @@
 import tarantool
 
+# Файл для работы с базой данных Tarantool
+
 class TarantoolDB:
     def __init__(self):
         self.connection = tarantool.connect('tarantool', 3301)

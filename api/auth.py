@@ -6,6 +6,8 @@ import hashlib
 import os
 import json
 
+# Файл с кодом аутентификации
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
 USERS_FILE = 'users.json'
 

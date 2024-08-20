@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 from auth import authenticate, requires_auth, create_user
 from database import TarantoolDB
 
+#Файл с кодом приложения
+
 app = Flask(__name__)
 db = TarantoolDB()
 
